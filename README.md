@@ -1,1 +1,1 @@
-# linked-list
+# Data Structures in C
