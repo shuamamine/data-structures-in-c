@@ -76,3 +76,30 @@ bst* deleteNode(bst* root, int data) {
     }
     return root;
 }
+int main() {
+    bst* root = NULL;
+
+    // Insert some elements into the BST
+    root = insert(root, 50);
+    root = insert(root, 30);
+    root = insert(root, 70);
+    root = insert(root, 20);
+    root = insert(root, 40);
+    root = insert(root, 60);
+    root = insert(root, 80);
+
+    // Print the BST in-order
+    printf("In-order traversal of the BST: ");
+    inorderTraversal(root);
+    printf("\n");
+
+    // Delete a node from the BST (e.g., deleting node with value 30)
+    root = deleteNode(root, 30);
+
+    // Print the BST after deletion
+    printf("In-order traversal after deleting node 30: ");
+    inorderTraversal(root);
+    printf("\n");
+
+ return 0;
+}
